@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <link rel="stylesheet" href="anna.css">
+    <meta charset="utf-8" />
+    <title>ONLY NHI</title>
+    <style>
+
+    body{
+    font-family: "Lucida Console", "Courier New", monospace;
+    }
+
+      .image-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Make sure the container takes the full width */
+}
+
+.image-item {
+  text-align: center; /* Center the text under the image */
+  margin-right: 169px; /* Add some space between images if needed */
+  width: 180px; /* Set the width to match the image width */
+  cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+}
+
+.image-item img {
+  width: 350px; /* Make the image fill the container */
+  height: 350px;
+}
+
+.image-item p {
+  margin: 5px 0;
+  color: #820000; /* Adjust text color as needed */
+  font-size: 25px; /* Adjust font size as needed */
+}
+
+/* Add hover effect */
+        .image-item:hover img {
+            transform: scale(1.1); /* Scale the image on hover */
+        }
+
+    </style>
+    <script>
+        function openPage(pageId) {
+            var url;
+            switch (pageId) {
+                case 'Nav1':
+                    url = 'alo.html';
+                    break;
+                case 'Nav2':
+                    url = 'programming.html';
+                    break;
+                case 'Nav3':
+                    url = 'design.html';
+                    break;
+                default:
+                    return;
+            }
+            window.open(url, '_blank');
+        }
+    </script>
+</head>
+
+<body>
+<div class="center">
+    <h1> ✮ ⋆ ˚only｡𖦹 ⋆｡nhi°✩</h1>
+    <div class="image-container">
+        <div class="image-item" onclick="openPage('Nav1')">
+            <img src="bilder/miau.jpeg" alt="Image 1">
+            <p>about me ˗ˏˋ✩ˎˊ˗</p>
+        </div>
+
+        <div class="image-item" onclick="openPage('Nav2')">
+            <img src="bilder/img1.jpeg" alt="Image 2">
+            <p>education ₊ ⊹</p>
+        </div>
+
+        <div class="image-item" onclick="openPage('Nav3')">
+            <img src="bilder/archive.jpeg" alt="Image 3">
+            <p>projects 𖦹</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

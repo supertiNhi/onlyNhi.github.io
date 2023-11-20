@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <link rel="stylesheet" href="anna.css">
+  <meta charset="utf-8" />
+  <title>programming</title>
+  <style>
+        body {
+            position: relative;
+            font-family: "Lucida Console", "Courier New", monospace;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #FEE0C0; /* Add your desired background color */
+
+        }
+
+        h1 {
+            color: #FF7C7C;
+            margin-bottom: 20px;
+                font-size: 65px;
+        }
+
+        h4,
+        h5,
+        h6{
+        color: #820000;
+            margin-bottom: 20px;
+                font-size: 25px;
+
+        }
+
+        .info-container {
+            display: flex;
+            align-items: center;
+            max-width: 800px; /* Adjust the maximum width as needed */
+            width: 100%;
+        }
+
+        .left-container {
+            flex: 1;
+            margin-right: 20px; /* Add some spacing between the image and text */
+                box-shadow:
+                10px 10px 0px #FF7C7C,
+                20px 20px 0px #FF7C7C,
+
+        }
+
+
+
+        .left-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-container {
+            flex: 1;
+        }
+
+        .text-container {
+            max-width: 100%;
+        }
+
+   /* Common parent container for "Why You Should Hire Me" and "Contact Me" */
+.hire-contact-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+/* "Why You Should Hire Me" container */
+.hire-me-content {
+  flex: 1;
+  margin-right: 20px; /* Add some spacing between the two sections */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the container */
+  border-radius: 12px;
+  padding: 20px; /* Add padding for a cleaner look */
+}
+
+/* "Contact Me" container */
+.contact-info-container {
+  flex: 1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the container */
+  border-radius: 12px;
+  padding: 20px; /* Add padding for a cleaner look */
+}
+
+/* Adjust the shadow-container styles to prevent it from covering the whole page */
+.shadow-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  box-shadow: 0 0 20px rgba(130, 0, 0, 0.5); /* Adjust the color and opacity */
+  border-radius: 12px; /* Adjust the border radius as needed */
+  pointer-events: none; /* Allow interaction with the content behind */
+  z-index: -1; /* Move the shadow behind the content */
+}
+
+
+    p {
+      margin: 10px 0;
+    }
+
+    a {
+      color: #820000;
+      text-decoration: none;
+    }
+
+
+
+     .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Add margin to separate it from the contact info */
+  }
+
+  button {
+    background-color: #FF7C7C;
+    color: #FEE0C0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #000;
+    }
+
+
+    </style>
+</head>
+
+<body>
+<h1>"Hello World!"</h1>
+<div class="info-container">
+  <div class="left-container">
+    <img src="bilder/csBarbie.jpeg" alt="Big Image">
+    <p><small>Computer Science Barbie 2010</small></p>
+  </div>
+  <div class="right-container">
+    <div class="text-container">
+      <h6>Skills</h6>
+      <p>Programming Languages</p>
+      <ul>
+        <li>Java</li>
+        <li>JavaScript</li>
+      </ul>
+      <p>Web Development</p>
+      <ul>
+        <li>HTML/CSS</li>
+      </ul>
+      <p>Human Languages</p>
+      <ul>
+        <li>German (native)</li>
+        <li>English (fluent) </li>
+        <li>Vietnamese (native)</li>
+      </ul>
+      <h5>Example projects </h5>
+      <p>౨ৎ Image Processing: <a href="GDM_Nhi.zip" download>⬇ gdm.zip </a></p>
+      <p>౨ৎ This Website</p>
+    </div>
+  </div>
+</div>
+<div class="hire-contact-container">
+  <div class="hire-me-content">
+    <h5>Relevant Coursework</h5>
+    <ul>
+      <li>Software Engineering</li>
+      <li>Computer Graphics</li>
+      <li>3D Modeling</li>
+      <li>SCRUM</li>
+      <li>Image Processing</li>
+      <li>Informatics</li>
+      <li>Networks</li>
+    </ul>
+  </div>
+    <div class="hire-me-content">
+    <h5>Extracurricular Activities</h5>
+      <p>IMI Summer Party Planner</p>
+    <ul>
+      <li><small>Successfully planned, organized, and managed the semester's summer party.</small></li>
+      <li><small>Demonstrated strong organizational and project management skills</small></li>
+      <li><small>Secured multiple sponsors...and we had a food truck :D</small></li>
+    </ul>
+  </div>
+</div>
+<div class="button-container">
+  <a href="design.html">
+    <button>Next Page ──★ ˙ ̟</button>
+  </a>
+</div>
+
+</body>
+
+</html>
